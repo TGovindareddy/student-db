@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header text-center">
+            <h2>Student Data using JSONDB API</h2>
+        </div>
+        <form id="stuform" method='post'>
+
+            <div class='form-group'>
+                <label>StudentRollNo</label>
+                <input type="text" id="stuno" class="form-control" onchange='getStu()'>
+            </div>
+            <div class='form-group'>
+                <label>StudentFullName</label>
+                <input type="text" id="stuname" class="form-control">
+            </div>
+            <div class='form-group'>
+                <label>StudentClass</label>
+                <input type="text" id="stuclass" class="form-control">
+            </div>
+            <div class='form-group'>
+                <label>StudentBirthDate</label>
+                <input type="date" id="birth" class="form-control">
+            </div>
+            <div class='form-group'>
+                <label>StudentAddress</label>
+                <input type="text" id="address" class="form-control">
+            </div>
+            <div class='form-group'>
+                <label>StudentEnrollmentDate</label>
+                <input type="date" id="enrdate" class="form-control">
+            </div>
+            <div>
+                <input type="button" class="btn btn-lg btn-primary" id="save" value="save"
+                    onclick="saveData()"></button>
+                <input type="button" class="btn btn-lg btn-primary" id="change" value="update"
+                    onclick="changeData()"></button>
+                <input type="button" class="btn btn-lg btn-primary" id="reset" value="reset"
+                    onclick="resetForm()"></button>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="http://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+    <script type="text/javascript" src="C:\xampp\htdocs\project\js\index.js"></script>
+</body>
+
+</html>
